@@ -20,7 +20,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Armagedon</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fa fa-bars"></i>
@@ -47,9 +47,9 @@
                     <div class="row">
                         <div class="col-lg-8 mx-auto">
                             <h1 class="brand-heading">Armagedon</h1>
-                            <p class="intro-text">A free, responsive, one page Bootstrap theme.
+                            {{-- <p class="intro-text">A free, responsive, one page Bootstrap theme.
                                 <br>Created by Start Bootstrap.
-                            </p>
+                            </p> --}}
                             <a href="#about" class="btn btn-circle js-scroll-trigger">
                             <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -81,8 +81,8 @@
         <section id="download" class="download-section content-section text-center">
             <div class="container">
                 <div class="col-lg-8 mx-auto">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
+                    <h2>Download</h2>
+                    <p>You can download Armagedon in the following link.</p>
                     <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
                 </div>
             </div>
@@ -93,9 +93,7 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2>Contact Start Bootstrap</h2>
-                        <p>Feel free to leave us a comment on the
-                            <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
-                            on Start Bootstrap to give some feedback about this theme!
+                        <p>Feel free to contact us for any problem or leave a comment to give some feedback!
                         </p>
                         <div class="container">
                             <div class="row justify-content-center">
@@ -150,7 +148,7 @@
         <!-- Footer -->
         <footer>
             <div class="container text-center">
-                <p>Copyright &copy; Your Website 2018</p>
+                <p>Copyright Armagedon SA 2018</p>
             </div>
         </footer>
         <!-- Bootstrap core JavaScript -->

@@ -11,10 +11,21 @@ use Log;
 
 class LoginController extends Controller
 {
+    private function sendSMS($phone, $validate)
+    {
+        Nexmo::message()->send([
+            'to' => $phone,
+            'from' => $phone,
+            'text' => 'Your autentification code is: '.$validate
+        ]);
+    }
+
 	public function handleUpdateUser(Request $request) 
 	{
 		try {
     		DB::beginTransaction();
+            $validate = rand (100000, 999999);
+            $request->merge(['validate' => $validate]);
     		$user = User::create($request->all());
     		DB::commit();
     		return response()->json(['redcode' => 0, 'user_id' => $user->id]);
@@ -28,7 +39,12 @@ class LoginController extends Controller
     public function handleLogin(Request $request)
     {
         if (auth()->guard('user')->attempt(array('email' => $request->input('email'), 'password' => $request->input('password')))) {
-            return response()->json(['redcode' => 0, 'user_id' => auth()->guard('user')->user()->id]);
+            if (!auth()->guard('user')->user()->validated) {
+                auth()->guard('user')->logout();
+                return response()->json(['redcode' => 2]);
+            } else {
+                return response()->json(['redcode' => 0, 'user_id' => auth()->guard('user')->user()->id]);
+            }
         }else {
             return response()->json(['redcode' => 1]);
         }

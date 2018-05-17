@@ -40,7 +40,7 @@ class ContactFormMail extends Mailable
                       with([
                         'name' => $this->name,
                         'email' => $this->email,
-                        'message' => $this->message
+                        'text' => $this->message
                       ]);
     }
 }

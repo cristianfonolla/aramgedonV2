@@ -17,6 +17,7 @@ class UserTableSeeder extends Seeder
         $user->name = "User";
         $user->email = "user@user.com";
         $user->password = '1234';
+        $user->validate = 598634;
         //$user->api_token = '1234';
         $user->save();
     }

@@ -22,5 +22,7 @@ Route::post('/register', 'Api\LoginController@handleUpdateUser');
 Route::post('/login', 'Api\LoginController@handleLogin');
 Route::get('/logout', 'Api\LoginController@logout');
 
+Route::get('/validate-user/{user}/{code}', 'Api\LoginController@ValidateUser');
+
 Route::post('update-parameter', 'Api\ParametersController@update');
 Route::get('get-parameter/{user_id}/{parameter_id}', 'Api\ParametersController@getData');

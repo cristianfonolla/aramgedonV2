@@ -8,15 +8,15 @@ use App\Models\ParameterUser;
 use Exception;
 use DB;
 use Log;
-//use App\Http\Middleware\VerifyAccessKey;
 
 class ParametersController extends Controller
 {
-    /*public function __construct()
-    {
-        $this->middleware(VerifyAccessKey::class);
-    }*/
-
+    /**
+    * Function for save a param data
+    *
+    * @param $request  type Request  Data to save
+    * @return json
+    */
     public function update(Request $request)
     {
     	try {
@@ -32,6 +32,13 @@ class ParametersController extends Controller
     	}
     }
 
+    /**
+    * Function for get the parameter average from user
+    *
+    * @param $user  type integer  User id
+    * @param $parameter  type integer  Parameter id
+    * @return json
+    */
     public function getData($user, $parameter)
     {
     	try {

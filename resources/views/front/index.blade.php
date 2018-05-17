@@ -6,6 +6,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
         <title>Armagedon</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
         <!-- Bootstrap core CSS -->
         <link href="{{ asset('front/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
         <!-- Custom fonts for this template -->

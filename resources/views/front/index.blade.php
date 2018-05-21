@@ -86,7 +86,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
-                        <h2>Contact Start Bootstrap</h2>
+                        <h2>Contact us</h2>
                         <p>Feel free to contact us for any problem or leave a comment to give some feedback!
                         </p>
                         <div class="container">
